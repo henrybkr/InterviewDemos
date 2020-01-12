@@ -3,7 +3,7 @@
 > Please contact me if the above link is no longer accessible.
 
 ## Preview
-<p align="center"><img src="https://i.imgur.com/Y4BGwAG.png"></p>
+<p align="center"><img src="https://i.imgur.com/Y4BGwAG.png" width="800"></p>
 
 ## About
 * Completed at the request during the final interview process for Birmingham based print/digital company "Jones & Palmer" where I applied for a junior developer role

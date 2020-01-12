@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/henrybkr/InterviewDemos/blob/master/logo.png"></p>
+<p align="center"><img src="https://github.com/henrybkr/InterviewDemos/blob/master/logo.png" width="175"></p>
 
 # Hbkr demos
 > A archive of some previous demos I've been asked to work on.
