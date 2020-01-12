@@ -1,12 +1,10 @@
-<p align="center"><img src="https://github.com/henrybkr/InterviewDemos/blob/master/logo.svg" width="200"></p>
+<p align="center"><img src="https://github.com/henrybkr/InterviewDemos/blob/master/logo.png" width="100"></p>
 
 # Hbkr Demos
 > A archive of some previous demos I've been asked to work on.
 
 ### Note
-> I have made every effort to remove any logos or other copyrighted content at a later date when examples are no longer under review. That said, I might miss something. Feel free to contact me if anything needs redacting. I can also completely remove demos if necessary.
-
-<p align="center"><img src="https://github.com/henrybkr/hbkr.space/blob/master/assets/images/projects/portfolio1.jpg" width="350"></p>
+> I have made every effort to remove any logos or other copyrighted content at a later date when examples are no longer under review. That said, I might miss something. Feel free to contact me if anything needs redacting. I can also completely remove demos upon request if necessary
 
 ## About
 This is a directory of any code examples I'm happy to share. If you've been directed to this page, please select the appropriate option from the list below. Feel free to check any previous work [here on github](https://github.com/henrybkr) or my [personal portfolio site](http://hbkr.space) where you'll also notice some unreleased projects.

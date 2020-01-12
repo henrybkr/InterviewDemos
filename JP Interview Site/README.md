@@ -1,9 +1,9 @@
-<p align="center"><img src="https://github.com/henrybkr/hbkr.space/blob/master/assets/images/logos/logo_blue.svg" width="75"></p>
-
-# [Check it out!](http://hbkr.space/projects/exercise1/)
+# Jones & Palmer - Single page responsive design
+## [Check it out!](http://hbkr.space/projects/exercise1/)
 > Please contact me if the above link is no longer accessible.
 
-<p align="center"><img src="https://i.imgur.com/Y4BGwAG.png" width="400"></p>
+## Preview
+<p align="center"><img src="https://i.imgur.com/Y4BGwAG.png"></p>
 
 ## About
 * Completed at the request during the final interview process for Birmingham based print/digital company "Jones & Palmer" where I applied for a junior developer role
