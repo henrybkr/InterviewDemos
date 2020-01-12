@@ -1,6 +1,6 @@
-<p align="center"><img src="https://github.com/henrybkr/InterviewDemos/blob/master/logo.png" width="100"></p>
+<p align="center"><img src="https://github.com/henrybkr/InterviewDemos/blob/master/logo.png"></p>
 
-# Hbkr Demos
+# Hbkr demos
 > A archive of some previous demos I've been asked to work on.
 
 ### Note
@@ -10,5 +10,5 @@
 This is a directory of any code examples I'm happy to share. If you've been directed to this page, please select the appropriate option from the list below. Feel free to check any previous work [here on github](https://github.com/henrybkr) or my [personal portfolio site](http://hbkr.space) where you'll also notice some unreleased projects.
 The intention of this repo is to provide a gateway for any code tests I'm asked to produce. By having everything in one repo, it's easier to view previous requests of other employers.
 
-## Available Demos/Code Tests
+## Current Available Demos/Code Tests
 * [Jones & Palmer - Single page responsive design](https://github.com/henrybkr/InterviewDemos/tree/master/JP%20Interview%20Site)

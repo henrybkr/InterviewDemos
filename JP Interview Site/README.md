@@ -7,7 +7,7 @@
 
 ## About
 * Completed at the request during the final interview process for Birmingham based print/digital company "Jones & Palmer" where I applied for a junior developer role
-* I provided with a visual-only PDF design document (zero technical details) and some company logos
+* I was provided with a visual-only PDF design document (zero technical details) and some company logos
 * Expected to work perfectly on Chrome. Additional points for Mozilla Firefox support
 * Expected to be completed within 2 weeks
 
@@ -27,7 +27,7 @@
 * A handful of minor CSS3 animation effects for improved interactivity
 
 ## Feedback Received
-* Generally extremely pleased - Was completed and delivered in under 24hrs
+* Generally extremely pleased - Was completed and delivered in under 24hrs of being given the task
 * Parallax effect was praised as a nice addition
 * Only complaint was that the second section was expected to be a slider - It was however mentioned that it wasn't clear and this would be no issue as would have direct communication with design team
 
