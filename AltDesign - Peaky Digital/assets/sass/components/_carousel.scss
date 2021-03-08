@@ -1,0 +1,67 @@
+@import '../variables/colors';
+@import '../variables/other';
+
+.carousel-inner .carousel-item {
+    width: 100%;
+    background-color: $color1;
+}
+
+.carousel-controls {
+    
+    height: 50px;
+    padding-bottom: 50px;
+}
+
+/* Carousel Buttons */
+.carousel-indicators [data-bs-target] {
+    width: 12.5px;
+    height: 12.5px;
+    border: solid 0px transparent;
+    border-radius: 12.5px;
+    background-color: $color3;
+    opacity: 0.3;
+    transition: all 0.5s;
+}
+.carousel-indicators [data-bs-target].active {
+    background-color: $color2;
+    opacity: 1;
+}
+.carousel-control-icon {
+    float: left;
+    height: 50px;
+    width: 50px;
+    background-color: $color2;
+    border: 0px solid transparent;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color3;
+    margin-right: 10px;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+.carousel-control-icon:hover, .carousel-control-icon:active, .carousel-control-icon:focus {
+    opacity: 0.8;
+}
+
+.carousel-indicators {
+    position: relative;
+    margin-top: 20px;
+    float: right;
+}
+
+@media (min-width: 1200px) {
+    .carousel-controls {
+        position: absolute;
+        bottom: 50px;
+        padding-bottom: 0;
+    }
+
+    .carousel-indicators {
+        bottom: 50px;
+        position: absolute;
+        float: unset;
+        margin-top: unset;
+    }
+}

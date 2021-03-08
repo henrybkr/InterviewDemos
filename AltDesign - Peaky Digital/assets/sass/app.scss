@@ -1,0 +1,29 @@
+// Copyright Hbkr 2020
+
+// Main Layout:
+@import 'layout/nav';
+@import 'layout/footer';
+
+// Utility Classes:
+//@import 'layout/utilities';
+
+// Component Classes
+@import 'components/buttons';
+@import 'components/carousel';
+
+// Colours
+@import 'variables/colors';
+@import 'variables/typography';
+@import 'variables/other';
+
+// Utilities
+@import 'utilities/general';
+
+// Specific Pages.
+@import 'pages/home';
+
+// Font Awesome
+$fa-font-path: "../../assets/webfonts/";
+@import 'fontawesome/fontawesome.scss';
+@import 'fontawesome/solid.scss';
+@import 'fontawesome/brands.scss';

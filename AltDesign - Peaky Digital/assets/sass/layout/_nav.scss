@@ -1,0 +1,102 @@
+/* Imports */
+
+@import '../variables/colors';
+@import '../variables/typography';
+@import '../variables/other';
+
+
+/* Classes */
+
+// Bootstrap overwrites mostly
+.navbar-collapse {
+    flex-grow: unset;
+}
+
+.navbar {
+    height: 60px;
+    background-color: $color1;
+}
+
+.nav-link {
+    font-weight: bold;
+}
+
+
+// Other
+
+.dropdown-bubble .dropdown-menu {
+    margin-top: 1rem;
+    border: unset;
+    border-radius: unset;
+    padding: 2rem;
+    width: 500px;
+    left: -190px;
+}
+
+.dropdown-bubble .dropdown-menu:before,
+.dropdown-bubble .dropdown-menu:after {
+    content: ' ';
+    display: block;
+    border-style: solid;
+    border-width: 0 .7rem .8rem .7rem;
+    border-color: transparent;
+    position: absolute;
+    left: calc(50% - 1.4rem);
+}
+
+.dropdown-bubble .dropdown-menu:before {
+    top: -.8rem;
+    //border-bottom-color: rgba(0,0,0,0.5);
+}
+
+.dropdown-bubble .dropdown-menu:after {
+    top: -.7rem;
+    border-bottom-color: #fff;
+}
+
+.dropdown-bubble .dropdown-menu ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.dropdown-bubble .dropdown-menu ul li a {
+    line-height: 22pt;
+}
+
+.dropdown-bubble .dropdown-menu a {
+    text-decoration: none;
+}
+
+.dropdown-bubble .dropdown-menu ul {
+    padding-left: 0;
+}
+
+.nav-heading {
+    font-size: $heading2_size;
+}
+
+$time: 0.25s;
+
+// Custom up/down arrow on nav
+.dropdown-toggle::after {
+    border: none;
+    font: normal normal normal 12pt/1 'Font Awesome 5 Free';
+    content: "\f078";
+    vertical-align: 0;
+    margin-left: 0.5rem;
+    color: $color2;
+
+    -webkit-transition: all ease $time;
+    -moz-transition: all ease $time;
+    -ms-transition: all ease $time;
+    -o-transition: all ease $time;
+    transition: all ease $time;
+}
+
+.dropdown-toggle.show::after {
+    transform: rotate(180deg);
+}
+
+main {
+    padding-top: 12px;
+}

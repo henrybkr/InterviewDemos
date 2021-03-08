@@ -1,0 +1,43 @@
+/* Variables */
+
+$color1: #2E3234;
+$color2: #FF4186;
+$color3: #FFFFFF;
+$color4: #F2F3F4;
+
+/* Classes */
+
+// General text colours
+.color-1 { color: $color1; }
+.color-2 { color: $color2; }
+.color-3 { color: $color3; }
+.color-4 { color: $color4; }
+
+// Background-colours
+.bg-color-1 { background-color: $color1 !important; }
+.bg-color-2 { background-color: $color2 !important; }
+.bg-color-3 { background-color: $color3 !important; }
+.bg-color-4 { background-color: $color4 !important; }
+
+// Links
+.link-color-1 { color: $color1; }
+.link-color-1:hover,
+.link-color-1:active,
+.link-color-1:focus {
+    color: rgba($color1, 0.7);
+}
+
+.link-color-2 { color: $color2; }
+.link-color-2:hover,
+.link-color-2:active,
+.link-color-2:focus {
+    color: rgba($color2, 0.7);
+}
+
+.link-color-3 { color: $color3; }
+.link-color-3:hover,
+.link-color-3:active,
+.link-color-3:focus {
+    color: rgba($color3, 0.7);
+}
+
