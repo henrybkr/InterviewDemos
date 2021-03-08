@@ -4,7 +4,7 @@
 
 ## Preview
 <p align="center">
-    <img src="assets/preview.jpg" width="800" style="box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1)">
+    <img src="https://github.com/henrybkr/InterviewDemos/blob/master/AltDesign%20-%20Peaky%20Digital/assets/preview.JPG" width="800" style="box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1)">
 </p>
 
 ## About

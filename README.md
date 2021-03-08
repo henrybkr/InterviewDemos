@@ -12,3 +12,4 @@ The intention of this repo is to provide a gateway for any code tests I'm asked 
 
 ## Current Available Demos/Code Tests
 * [Jones & Palmer - Single page responsive design](https://github.com/henrybkr/InterviewDemos/tree/master/JP%20Interview%20Site)
+* [Alt Design - Peaky Digital Code Test](https://github.com/henrybkr/InterviewDemos/tree/master/AltDesign%20-%20Peaky%20Digital)
