@@ -486,6 +486,7 @@ footer p {
     position: absolute;
     bottom: 50px;
     padding-bottom: 0;
+    z-index: 5;
   }
 
   .carousel-indicators {
@@ -686,6 +687,127 @@ p.large_font {
 
 .client-logo-container > img:hover {
   opacity: 1;
+}
+
+.case-study-container {
+  height: 500px;
+  width: 100%;
+}
+
+.img-container {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93.5%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93.5%);
+  background: transparent;
+  height: 600px;
+  margin-bottom: 100px;
+  position: relative;
+  overflow: visible;
+}
+
+.img-container.bump {
+  margin-top: 42px;
+}
+
+.case-study-bg-1 {
+  background: url("../../images/Case study 1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.case-study-bg-2 {
+  background: url("../../images/Case study 2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.case-study-container .heading-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(255, 0, 0, 0) 100%);
+  padding: 1.5rem;
+}
+
+.case-study-container .heading-container .heading {
+  color: #FFFFFF;
+  font-size: 24pt;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.case-study-container .heading-container .desc {
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+}
+
+.case-study-container .heading-container .case-link {
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+}
+.case-study-container .heading-container .case-link:hover, .case-study-container .heading-container .case-link:active, .case-study-container .heading-container .case-link:focus {
+  color: #FF4186;
+  cursor: pointer;
+}
+
+.case-study-container .overview-outer-container {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.case-study-container .overview-container {
+  margin-top: -270px;
+  float: right;
+  width: 50%;
+  margin-right: 2rem;
+}
+
+.overview-text-container {
+  position: absolute;
+  background: #FFFFFF;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  height: 230px;
+  width: 50%;
+  z-index: 1;
+  padding: 1rem;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.case-study-container .overview-container .img-fluid {
+  height: 200px;
+  width: 100%;
+  margin-top: -100px;
+}
+
+.shadow-wrap {
+  filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.2));
+  position: absolute;
+  width: 100%;
+  left: calc(50% - 2rem);
+}
+
+.case-study-container .overview-container h3 {
+  font-size: 24pt;
+  font-weight: normal;
+}
+
+.overview-header {
+  color: #FF4186;
+  margin-top: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+.case-study-spacer {
+  height: 150px;
 }
 
 /* TO REVIEW ----- below */
@@ -6804,8 +6926,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url("../../assets/webfonts//fa-solid-900.eot");
-  src: url("../../assets/webfonts//fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../../assets/webfonts//fa-solid-900.woff2") format("woff2"), url("../../assets/webfonts//fa-solid-900.woff") format("woff"), url("../../assets/webfonts//fa-solid-900.ttf") format("truetype"), url("../../assets/webfonts//fa-solid-900.svg#fontawesome") format("svg");
+  src: url("../../webfonts/fa-solid-900.eot");
+  src: url("../../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../../webfonts/fa-solid-900.woff2") format("woff2"), url("../../webfonts/fa-solid-900.woff") format("woff"), url("../../webfonts/fa-solid-900.ttf") format("truetype"), url("../../webfonts/fa-solid-900.svg#fontawesome") format("svg");
 }
 .fa,
 .fas {
@@ -6822,8 +6944,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../../assets/webfonts//fa-brands-400.eot");
-  src: url("../../assets/webfonts//fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../../assets/webfonts//fa-brands-400.woff2") format("woff2"), url("../../assets/webfonts//fa-brands-400.woff") format("woff"), url("../../assets/webfonts//fa-brands-400.ttf") format("truetype"), url("../../assets/webfonts//fa-brands-400.svg#fontawesome") format("svg");
+  src: url("../../webfonts/fa-brands-400.eot");
+  src: url("../../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../../webfonts/fa-brands-400.woff2") format("woff2"), url("../../webfonts/fa-brands-400.woff") format("woff"), url("../../webfonts/fa-brands-400.ttf") format("truetype"), url("../../webfonts/fa-brands-400.svg#fontawesome") format("svg");
 }
 .fab {
   font-family: "Font Awesome 5 Brands";
