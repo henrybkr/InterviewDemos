@@ -1,10 +1,29 @@
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url("../../font/GilroyRegular.otf") format("truetype");
+}
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url("../../font/Gilroy-Medium.otf") format("truetype");
+}
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url("../../font/Gilroy Light.otf") format("truetype");
+}
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url("../../font/Gilroy Bold.otf") format("truetype");
+}
+
 /* Variables */
 
 $heading1_size: 32pt;
 $heading2_size: 24pt;
 $heading3_size: 18pt;
-$heading4_size: 14pt;
-$heading5_size: 10pt;
+$heading4_size: 16pt;
+$heading5_size: 14pt;
+$heading6_size: 12pt;
+$heading7_size: 9pt;
 
 $super_large: 48pt;
 $very_large: 50pt;
@@ -15,8 +34,23 @@ $very_large: 50pt;
 h1 { font-size: $heading1_size; color: black; }
 h2 { font-size: $heading2_size; color: black; }
 h3 { font-size: $heading3_size; color: black; }
+h4 { font-size: $heading4_size; color: black; }
+h5 { font-size: $heading5_size; color: black; }
 
-h1.large-header { font-size: $super_large; font-weight: bold; }
-h2.large-header { font-size: $very_large; font-weight: bold; }
+h1, h2, h3, h4, h5 {
+    font-family: 'Gilroy-Bold', sans-serif; font-weight: bold;
+}
 
-p.large_font { font-size: $heading4_size; }
+h1.large-header { font-size: $super_large; }
+h2.large-header { font-size: $very_large; }
+h5.large-header { font-size: $heading3_size }
+
+p.large-font { font-size: $heading4_size; }
+p.small-font { font-size: $heading7_size}
+p { font-size: $heading5_size; font-family: 'Gilroy-Medium', sans-serif;}
+
+p.intro { font-size: $heading6_size; }
+
+body {
+    font-family: 'Gilroy-Medium', sans-serif;
+}

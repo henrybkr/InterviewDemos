@@ -9,46 +9,161 @@
 .btn-primary {
     background-color: $color2;
     border: unset;
+
+    &:hover, &:active, &:focus {
+        background-color: rgba($color2, 0.8);
+    }
 }
 .btn-secondary {
     background-color: $color1;
     border: unset;
+    
+    &:hover, &:active, &:focus {
+        background-color: rgba($color1, 0.8);
+    }
 }
-.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-    background-color: rgba($color2, 0.8);
+.btn-blue {
+    background-color: $color5;
+    border: unset;
+    color: $color3;
+
+    
+    &:hover, &:active, &:focus {
+        background-color: rgba($color5, 0.8);
+        color: $color3;
+    }
 }
 
+/* Other button-like elements */
 .service-tab-link {
     background-color: $color3;
     padding: 1rem;
     margin-top: 1.5rem;
     opacity: 0.8;
     transform: scale(1);
-    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, color 0.5s ease-in-out;
     display: block;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     will-change: transform;
+    text-decoration: none;
+    color: $color1;
+    &:hover {
+        color: $color2;
+        opacity: 1;
+        transform: scale(1.05);
+        transition: transform 0.25s, opacity 0.25s;
+        // Decided against these animations. Couldn't find a simple suitable solution for the fade out for the animation.
+        //-webkit-animation: pulse 1s infinite;
+        //animation: pulse 1s infinite;
+    }
 }
-
 .service-tab .icon {
     margin-top: -3.5rem;
 }
 
-.service-tab-link:hover {
-    opacity: 1;
-    transform: scale(1.05);
-    transition: transform 0.25s, opacity 0.25s;
-
-    //-webkit-animation: pulse 1s infinite;
-    //animation: pulse 1s infinite;
+/* What we do cards */
+#What-We-Do .card {
+    border: none;
+    transform: scale(1);
+    transition: transform 0.5s, color 0.5s ease-in-out;
+    display: block;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: transform;
+    border-radius: 0;
     
+    &:hover, &:focus {
+        transform: scale(1.05);
+    }
+    .card-body a { 
+        color: $color2;
+        text-align: center;
+        width: 100%;
+        display: block;
+        opacity: 0.6;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+        will-change: opacity;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+    .card-text {
+
+        @media (min-width: 768px) {
+            height: 160px;
+        }
+    }
 }
 
-.service-tab-link {
-    text-decoration: none;
-    color: $color1;
+/* Brands section */
+#Brands-Helped {
+    .brands-main-container {
+        padding: 5rem 0;
+    }
+    .brands-container {
+        margin: 2rem 0;
+    }
+    .brands-container .brand {
+        background-color: $color3;
+        padding: 1rem;
+        opacity: 0.8;
+        transform: scale(1);
+        transition: transform 0.5s, opacity 0.5s;
+        display: block;
+        text-decoration: none;
+        color: $color1;
+        border: 1px solid;
+        position: relative;
+        min-height: 200px;
+        &:hover {
+            color: $color2;
+            opacity: 1;
+            transform: scale(1.05);
+            transition: transform 0.25s, opacity 0.25s;
+            z-index: 5;
+            // Decided against these animations. Couldn't find a simple suitable solution for the fade out for the animation.
+            //-webkit-animation: pulse 1s infinite;
+            //animation: pulse 1s infinite;
+        }
+    }
 }
-.service-tab-link:hover {
-    text-decoration: none;
-    color: $color1;
+
+/* Also includes forms */
+#Contact {
+    .btn-submit {
+        background-color: $color3;
+        border: unset;
+        color: $color2;
+        
+        &:hover, &:active, &:focus {
+            background-color: rgba($color3, 0.8);
+        }
+    }
+    
+    .form-control {
+        background: unset;
+        border-radius: 0;
+        border-color: rgba($color3,0.5);
+        color: $color3;
+        
+        &:focus {
+            border-color: $color3;
+            color: $color3;
+            -webkit-box-shadow: 0px 0px 12px 0px rgba($color3, .25);
+            -moz-box-shadow: 0px 0px 12px 0px rgba($color3, .25);
+            box-shadow: 0px 0px 12px 0px rgba($color3, .25);
+        }
+    }
+
+    .form-label, .form-check-label { color: $color3; }
+}
+
+/* tickbox */
+
+.form-check-input:checked {
+    background-color: $color1;
+    border-color: $color1;
 }

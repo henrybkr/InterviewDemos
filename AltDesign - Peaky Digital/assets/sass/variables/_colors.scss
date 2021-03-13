@@ -4,6 +4,9 @@ $color1: #2E3234;
 $color2: #FF4186;
 $color3: #FFFFFF;
 $color4: #F2F3F4;
+$color5: #00D3DB;
+$color6: #FFE5F5;
+$color7: #625D71;
 
 /* Classes */
 
@@ -12,12 +15,18 @@ $color4: #F2F3F4;
 .color-2 { color: $color2; }
 .color-3 { color: $color3; }
 .color-4 { color: $color4; }
+.color-5 { color: $color5; }
+.color-6 { color: $color6; }
+.color-7 { color: $color7; }
+//.color-8 { color: $color8; }
 
 // Background-colours
 .bg-color-1 { background-color: $color1 !important; }
 .bg-color-2 { background-color: $color2 !important; }
 .bg-color-3 { background-color: $color3 !important; }
 .bg-color-4 { background-color: $color4 !important; }
+.bg-color-5 { background-color: $color5 !important; }
+.bg-color-6 { background-color: $color6 !important; }
 
 // Links
 .link-color-1 { color: $color1; }
@@ -38,6 +47,11 @@ $color4: #F2F3F4;
 .link-color-3:hover,
 .link-color-3:active,
 .link-color-3:focus {
-    color: rgba($color3, 0.7);
+    color: rgba($color3, 0.5);
 }
 
+.brand-border { border-color: #D8D8D8 !important; }
+
+.black-to-white-filter {
+    filter: invert(1) brightness(1);
+}

@@ -13,6 +13,9 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 		<!-- Custom CSS (compiled sass)-->
 		<link href="assets/dist/css/app.css" rel="stylesheet">
+
+		<!-- flickity (carousel) -->
+		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	</head>
 	<body>
 		<!-- Main Navigation for the page -->
@@ -29,15 +32,15 @@
 						<li class="nav-item">
 							<div class="dropdown dropdown-bubble">
 								<a class="nav-link link-color-3 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Services</a>
-								<div class="dropdown-menu" aria-labelledby="dLabel">
+								<div class="dropdown-menu shadow" aria-labelledby="dLabel" style="margin-left: -80px;">
 									<div class="row">
 										<div class="col-12 pb-3">
 											<span class="nav-heading fw-bold color-1">Services</span>
 										</div>
 									</div>
-									<div class="row">
-										<div class="col-xl-6">
-											<ul>
+									<div class="w-100" style="height: 190px;">
+										<div style="float: left;">
+											<ul >
 												<li><a href="#" class="link-color-1">SEO</a></li>
 												<li><a href="#" class="link-color-1">PPC</a></li>
 												<li><a href="#" class="link-color-1">Social Media</a></li>
@@ -46,22 +49,20 @@
 												<li><a href="#" class="link-color-1">Copywriting</a></li>
 											</ul>
 										</div>
-										<div class="col-xl-6">
+										<div style="float: left;">
 											<ul>
 												<li><a href="#" class="link-color-1">CRO</a></li>
 												<li><a href="#" class="link-color-1">Strategy</a></li>
 												<li><a href="#" class="link-color-1">Ecommerce</a></li>
 												<li><a href="#" class="link-color-1">B2B</a></li>
 												<li><a href="#" class="link-color-1">Training</a></li>
-												<li><a href="#" class="link-color-1">Digital PR</a></li>
 											</ul>
 										</div>
 									</div>
-									<div class="row">
-										<div class="col-12 pt-3">
-											<a href="#" class="link-color-2 fw-bold">Explore All Services<i class="fas fa-arrow-right ms-2"></i></a>
-										</div>
+									<div class="w-100">
+										<a href="#" class="link-color-2 fw-bold">Explore All Services<i class="fas fa-arrow-right ms-2"></i></a>
 									</div>
+										
 								</div>
 							</div>
 						</li>
@@ -108,154 +109,156 @@
 		<!-- Begin main content -->
 		<main>
 			<!-- Main top Carousel -->
-			<div id="myCarousel" class="carousel slide bg-color-1" data-bs-ride="carousel">
-				
-
-				<!-- Carousel Content -->
-				<div class="carousel-inner">
-					<div class="carousel-item active">						
-						<div class="container">
-							<div class="row">
-								<div class="col-12 col-xl-6 d-flex justify-content-start align-items-center">
-									<div class="carousel-caption text-start position-initial ">
-										<p class="color-2 text-uppercase fw-bold" style="letter-spacing: 3px;">Welcome &mdash;</p>
-										<h1 class="large-header color-3">Digital marketing that drives sales</h1>
-										<p>We help you get found online</p>
-										<p><a class="btn btn-lg btn-primary" href="#">Explore Services</a></p>
+			<section id="Welcome">
+				<div id="myCarousel" class="carousel slide bg-color-1" data-bs-ride="carousel">
+					<!-- Carousel Content -->
+					<div class="carousel-inner pt-5">
+						<div class="carousel-item active">						
+							<div class="container">
+								<div class="row">
+									<div class="col-12 col-xl-6 d-flex justify-content-start align-items-center">
+										<div class="carousel-caption text-start position-initial animate__animated animate__fadeInUp remove-initial-animation">
+											<p class="color-2 text-uppercase intro fw-bold" style="letter-spacing: 3px;">Welcome &mdash;</p>
+											<h1 class="large-header color-3">Digital marketing that drives sales</h1>
+											<p>We help you get found online</p>
+											<p><a class="btn btn-lg btn-primary" href="#">Explore Services</a></p>
+										</div>
+									</div>
+									<div class="col-12 col-xl-6 d-flex justify-content-center align-items-end pt-3 animate__animated animate__fadeInUp remove-initial-animation animate__delay-02s">
+										<img class="img-fluid" src="assets/images/Hero video image.png" alt="Hero video image" style="max-height: 75vh;">
 									</div>
 								</div>
-								<div class="col-12 col-xl-6 d-flex justify-content-center align-items-end pt-3">
-									<img class="img-fluid" src="assets/images/Hero video image.png" alt="Hero video image" style="max-height: 75vh;">
+							</div>
+						</div>
+						<div class="carousel-item">						
+							<div class="container">
+								<div class="row">
+									<div class="col-12 col-xl-6 d-flex justify-content-start align-items-center">
+										<div class="carousel-caption text-start position-initial">
+											<p class="color-2 text-uppercase intro fw-bold" style="letter-spacing: 3px;">Welcome &mdash;</p>
+											<h1 class="large-header color-3">Digital marketing that drives sales</h1>
+											<p>We help you get found online</p>
+											<p><a class="btn btn-lg btn-primary" href="#">Explore Services</a></p>
+										</div>
+									</div>
+									<div class="col-12 col-xl-6 d-flex justify-content-center align-items-end pt-3">
+										<img class="img-fluid" src="assets/images/Hero video image.png" alt="Hero video image" style="max-height: 75vh;">
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="carousel-item">						
-						<div class="container">
-							<div class="row">
-								<div class="col-12 col-xl-6 d-flex justify-content-start align-items-center">
-									<div class="carousel-caption text-start position-initial">
-										<p class="color-2 text-uppercase fw-bold" style="letter-spacing: 3px;">Welcome &mdash;</p>
-										<h1 class="large-header color-3">Digital marketing that drives sales</h1>
-										<p>We help you get found online</p>
-										<p><a class="btn btn-lg btn-primary" href="#">Explore Services</a></p>
-									</div>
+					<!-- End Carousel Content -->
+					<div class="container pb-3 pb-xl-0">
+						<div class="row">
+							<div class="col-6 col-xl-12">
+								<!-- Carousel Controls -->
+								<div class="carousel-controls">
+									<button class="carousel-control-icon carousel-control-icon-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+										<i class="fas fa-arrow-left"></i>
+									</button>
+									<button class="carousel-control-icon carousel-control-icon-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+										<i class="fas fa-arrow-right"></i>
+									</button>
 								</div>
-								<div class="col-12 col-xl-6 d-flex justify-content-center align-items-end pt-3">
-									<img class="img-fluid" src="assets/images/Hero video image.png" alt="Hero video image" style="max-height: 75vh;">
+								<!-- End Carousel Controls -->
+							</div>
+							<div class="col-6 col-xl-12">
+								<!-- Carousel buttons -->
+								<div class="carousel-indicators">
+									<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+									<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
 								</div>
+								<!-- End Carousel buttons -->
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- End Carousel Content -->
-
-				<div class="container pb-3 pb-xl-0">
-					<div class="row">
-						
-						<div class="col-6 col-xl-12">
-							<!-- Carousel Controls -->
-							<div class="carousel-controls">
-								<button class="carousel-control-icon carousel-control-icon-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-									<i class="fas fa-arrow-left"></i>
-								</button>
-								<button class="carousel-control-icon carousel-control-icon-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-									<i class="fas fa-arrow-right"></i>
-								</button>
-							</div>
-							<!-- End Carousel Controls -->
-						</div>
-						<div class="col-6 col-xl-12">
-							<!-- Carousel buttons -->
-							<div class="carousel-indicators">
-								<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-								<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-							</div>
-							<!-- End Carousel buttons -->
-						</div>
-					</div>
-				</div>
-				
-			</div>
+			</section>
 			<!-- End Main top Carousel -->
 			
 			<!-- Angle 1 -->
-			<div class="w-100" style="margin-top: -1px;">
-				<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1440 88.375" style="transform: scale(1,-1);">
+			<div class="w-100 angle">
+				<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1440 88" style="transform: scale(1,-1);">
 					<path id="Path_498" data-name="Path 498" d="M240,177.375,1680,89v88.375H240Z" transform="translate(-240 -89)" fill="#2E3234"/>
 				</svg>
 			</div>
-			<!-- End Angle 1-->
+			<!-- End Angle 1 -->
 
 			<!-- Clients area 1 -->
-			<div class="container py-3">
-				<div class="row">
-					<div class="col-12 text-center">
-						<h3 class="mb-2 fw-bold">Working with some great clients</h3>
+			<section id="Our-Clients">
+				<div class="container py-3">
+					<div class="row">
+						<div class="col-12 text-center">
+							<h3 class="mb-2 fw-bold">Working with some great clients</h3>
+						</div>
+					</div>
+					<div class="row justify-content-md-center">
+						<div class="client-logo-container col-6 col-lg-3 col-xl-2 d-flex justify-content-center align-items-center">
+							<img class="img-fluid" src="assets/images/logos/logo-11.svg" alt="Hero video image">
+						</div>
+						<div class="client-logo-container col-6 col-lg-3 col-xl-2 d-flex justify-content-center align-items-center">
+							<img class="img-fluid" src="assets/images/logos/logo-12.svg" alt="Hero video image">
+						</div>
+						<div class="client-logo-container col-6 col-lg-3 col-xl-2 d-flex justify-content-center align-items-center">
+							<img class="img-fluid" src="assets/images/logos/logo-2.svg" alt="Hero video image">
+						</div>
+						<div class="client-logo-container col-6 col-lg-3 col-xl-2 d-flex justify-content-center align-items-center">
+							<img class="img-fluid" src="assets/images/logos/logo-4.svg" alt="Hero video image">
+						</div>
+						<div class="client-logo-container col-6 col-lg-3 col-xl-2 d-flex justify-content-center align-items-center">
+							<img class="img-fluid" src="assets/images/logos/logo-3.svg" alt="Hero video image">
+						</div>
+						<div class="client-logo-container col-6 col-lg-3 col-xl-2 d-flex justify-content-center align-items-center">
+							<img class="img-fluid" src="assets/images/logos/logo-12.svg" alt="Hero video image">
+						</div>
 					</div>
 				</div>
-				<div class="row justify-content-md-center">
-					<div class="client-logo-container col-6 col-lg-3 col-xl-2 d-flex justify-content-center align-items-center">
-						<img class="img-fluid" src="assets/images/logos/logo-11.svg" alt="Hero video image">
-					</div>
-					<div class="client-logo-container col-6 col-lg-3 col-xl-2 d-flex justify-content-center align-items-center">
-						<img class="img-fluid" src="assets/images/logos/logo-12.svg" alt="Hero video image">
-					</div>
-					<div class="client-logo-container col-6 col-lg-3 col-xl-2 d-flex justify-content-center align-items-center">
-						<img class="img-fluid" src="assets/images/logos/logo-2.svg" alt="Hero video image">
-					</div>
-					<div class="client-logo-container col-6 col-lg-3 col-xl-2 d-flex justify-content-center align-items-center">
-						<img class="img-fluid" src="assets/images/logos/logo-4.svg" alt="Hero video image">
-					</div>
-					<div class="client-logo-container col-6 col-lg-3 col-xl-2 d-flex justify-content-center align-items-center">
-						<img class="img-fluid" src="assets/images/logos/logo-3.svg" alt="Hero video image">
-					</div>
-					<div class="client-logo-container col-6 col-lg-3 col-xl-2 d-flex justify-content-center align-items-center">
-						<img class="img-fluid" src="assets/images/logos/logo-12.svg" alt="Hero video image">
-					</div>
-				</div>
-			</div>
+			</section>
 			<!-- End Clients area 1 -->
 		
 			<!-- About Us -->
-			<div class="container">
-				<div class="row">
-					<div class="col-12 mt-5">
-						<div class="text-start position-initial">
-							<p class="color-2 text-uppercase fw-bold" style="letter-spacing: 3px;">About Us &mdash;</p>
-							<h1 class="large-header">Hi, we're <span class="color-2">Peaky Digital</span></h1>
-							<h3>We’re a boutique digital agency helping businesses across the UK with digital marketing that works</h3>
+			<section id="About-Us">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 mt-5">
+							<div class="text-start position-initial">
+								<p class="color-2 text-uppercase intro fw-bold" style="letter-spacing: 3px;">About Us &mdash;</p>
+								<h1 class="large-header">Hi, we're <span class="color-2">Peaky Digital</span></h1>
+								<h3>We’re a boutique digital agency helping businesses across the UK with digital marketing that works</h3>
+							</div>
 						</div>
-					</div>
-					<div class="col-12 col-xl-7 d-flex justify-content-start align-items-end pt-3">
-						<img class="img-fluid" src="assets/images/About us.png" alt="Hero video image" style="max-height: 85vh;">
-					</div>
-					<div class="col-12 col-xl-5 d-flex justify-content-start align-items-center ps-lg-0">
-						<div class="padding-5rem ps-0">
-							<h2 class="large-header">A Bit about us</h2>
-							<p class="large_font">We know what it feels to be frustrated by how difficult it is to get found online. You’ve watched companies, both large and small, totally transform their fortunes with a strong digital presence. You can’t help but wonder how they achieve it. How do you make get found at the top of Google, or grow an engaged social media following? It’s a mystery. But it shouldn’t be.</p>
-							<p><a class="btn btn-lg btn-primary" href="#">Our Team</a></p>
+						<div class="col-12 col-xl-7 d-flex justify-content-start align-items-end pt-3">
+							<img class="img-fluid" src="assets/images/About us.png" alt="Hero video image" style="max-height: 85vh;">
+						</div>
+						<div class="col-12 col-xl-5 d-flex justify-content-start align-items-center ps-lg-0">
+							<div class="padding-5rem ps-0">
+								<h2 class="large-header">A Bit about us</h2>
+								<p class="large-font">We know what it feels to be frustrated by how difficult it is to get found online. You’ve watched companies, both large and small, totally transform their fortunes with a strong digital presence. You can’t help but wonder how they achieve it. How do you make get found at the top of Google, or grow an engaged social media following? It’s a mystery. But it shouldn’t be.</p>
+								<p><a class="btn btn-lg btn-primary" href="#">Our Team</a></p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 			<!-- End About Us -->
 
 			<!-- Angle 2 -->
-			<div class="w-100" style="margin-top: -1px;">
-				<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1440 88.375" style="transform: scale(1,1);">
+			<div class="w-100 angle">
+				<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1440 88" style="transform: scale(1,1);">
 					<path id="Path_498" data-name="Path 498" d="M240,177.375,1680,89v88.375H240Z" transform="translate(-240 -89)" fill="#F2F3F4"/>
 				</svg>
 			</div>
 			<!-- End Angle 2 -->
 
 			<!-- Our Services -->
+			<section id="Our-Services">
 			<div class="bg-color-4">
 				<div class="container">
 					<div class="row">
 						<!-- Title area -->
 						<div class="col-12 mt-3 text-center">
-							<p class="color-1 text-uppercase fw-bold" style="letter-spacing: 3px;">&mdash; Our Services &mdash;</p>
+							<p class="color-1 text-uppercase intro" style="letter-spacing: 3px;">&mdash; Our Services &mdash;</p>
 							<h1 class="large-header">What We Offer</h1>
 							<div class="w-50 m-auto mb-5">
 								<p class="color-1">People are searching for what you have to sell. The problem is that if they don’t find you they can’t buy from you… and that’s costing you money (and a heap of frustration).</p>
@@ -324,105 +327,566 @@
 					</div>
 				</div>
 			</div>
+			</section>
 			<!-- End Our Services -->
 			
 			<!-- Case Studies -->
-			
-			<div class="container">
-				<div class="row">
-					<div class="col-12 mt-5">
-						<div class="text-start position-initial">
-							<p class="color-2 text-uppercase fw-bold" style="letter-spacing: 3px;">Case Studies &mdash;</p>
-							<h1 class="large-header">Creating <span class="color-2">Great Work</span></h1>
-							<div class="row">
-								<div class="col">
-									<h3>People are searching for what you have to sell. The problem is that if they don’t find you they can’t buy from you… and that’s costing you money (and a heap of frustration).</h3>
-								</div>
-								<div class="col-auto">
-									<p><a class="btn btn-lg btn-primary" href="#">View All Case Studies</a></p>
+			<section id="Our-Studies" class="">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 mt-5">
+							<div class="text-start position-initial">
+								<p class="color-2 text-uppercase intro fw-bold" style="letter-spacing: 3px;">Case Studies &mdash;</p>
+								<h1 class="large-header">Creating <span class="color-2">Great Work</span></h1>
+								<div class="row">
+									<div class="col">
+										<p>People are searching for what you have to sell. The problem is that if they don’t find you they can’t buy from you… and that’s costing you money (and a heap of frustration).</p>
+									</div>
+									<div class="col-12 col-md-auto">
+										<p><a class="btn btn-lg btn-primary" href="#">View All Case Studies</a></p>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class='row my-5'>
-					<div class="col-12 col-md-6 d-flex justify-content-start align-items-end">
-						<div class="case-study-container">
-							<div class="img-container case-study-bg-1">
-								<div class="heading-container">
-									<div class="heading">REFUGE4PETS</div>
-									<div class="desc">Lorem ipsum dolor consectetur adipiscing elit.</div>
-									<a href="#" class="case-link">View Case Studies<i class="fas fa-arrow-right ms-2 fa-xs"></i></a>
+					<div class='row mt-5'>
+						<div class="col-12 col-md-6 d-flex justify-content-start align-items-end">
+							<div class="case-study-container">
+								<div class="img-container case-study-bg-1">
+									<div class="heading-container">
+										<div class="heading">REFUGE4PETS</div>
+										<div class="desc">Lorem ipsum dolor consectetur adipiscing elit.</div>
+										<a href="#" class="case-link">View Case Studies<i class="fas fa-arrow-right ms-2 fa-xs"></i></a>
+									</div>
+								</div>
+								<div class="overview-outer-container">
+									<div class="overview-container d-flex justify-content-center">
+										<div class="w-100" style="z-index: 5;">
+											<img class="img-fluid" src="assets/images/icons/Case study 1.svg" alt="Hero video image">
+										</div>
+										<div class="shadow-wrap">
+											<div class="overview-text-container ">
+												<p class='overview-header'>Overview</p>
+												<h3>237%</h3>
+												<p>Increase in website traffic</p>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="overview-outer-container">
-								<div class="overview-container d-flex justify-content-center">
-									<div class="w-100" style="z-index: 5;">
-										<img class="img-fluid" src="assets/images/icons/Case study 1.svg" alt="Hero video image">
+						</div>
+						
+						<div class="col-12 col-md-6 d-flex justify-content-start align-items-center"><div class="case-study-spacer"></div>
+							<div class="case-study-container">
+								<div class="img-container case-study-bg-2 bump">
+									<div class="heading-container">
+										<div class="heading">Birdholme</div>
+										<div class="desc">Lorem ipsum dolor consectetur adipiscing elit.</div>
+										<a href="#" class="case-link">View Case Studies<i class="fas fa-arrow-right ms-2 fa-xs"></i></a>
 									</div>
-									<div class="shadow-wrap">
-										<div class="overview-text-container ">
-											<p class='overview-header'>Overview</p>
-											<h3>237%</h3>
-											<p>Increase in website traffic</p>
+								</div>
+								<div class="overview-outer-container">
+									<div class="overview-container d-flex justify-content-center">
+										<div class="w-100" style="z-index: 5;">
+											<img class="img-fluid" src="assets/images/icons/Case study 2.svg" alt="Hero video image">
+										</div>
+										<div class="shadow-wrap">
+											<div class="overview-text-container ">
+												<p class='overview-header'>Overview</p>
+												<h3>10,000+</h3>
+												<p>page views</p>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="d-lg-none case-study-spacer"></div>
-					<div class="col-12 col-md-6 d-flex justify-content-start align-items-center">
-						<div class="case-study-container">
-							<div class="img-container case-study-bg-2 bump">
-								<div class="heading-container">
-									<div class="heading">Birdholme</div>
-									<div class="desc">Lorem ipsum dolor consectetur adipiscing elit.</div>
-									<a href="#" class="case-link">View Case Studies<i class="fas fa-arrow-right ms-2 fa-xs"></i></a>
-								</div>
-							</div>
-							<div class="overview-outer-container">
-								<div class="overview-container d-flex justify-content-center">
-									<div class="w-100" style="z-index: 5;">
-										<img class="img-fluid" src="assets/images/icons/Case study 2.svg" alt="Hero video image">
-									</div>
-									<div class="shadow-wrap">
-										<div class="overview-text-container ">
-											<p class='overview-header'>Overview</p>
-											<h3>10,000+</h3>
-											<p>page views</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
-			</div>
-			<div class="case-study-spacer"></div>
-
+			</section>
 			<!-- End Case Studies -->
 
 			<!-- Angle 3 -->
-			<div class="w-100" style="margin-top: -1px;">
-				<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1440 88.375" style="transform: scale(-1,1);">
+			<div class="w-100 angle">
+				<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1440 88" style="transform: scale(-1,1);">
 					<path id="Path_498" data-name="Path 498" d="M240,177.375,1680,89v88.375H240Z" transform="translate(-240 -89)" fill="#2E3234"/>
 				</svg>
 			</div>
 			<!-- End Angle 3 -->
 
+			<!-- Our Services -->
+			<section id="More-Services">
+				<div class="container-fluid bg-color-1">
+					<div class="container pt-5">
+						<div class="row">
+							<div class="col-md-6 text-center">
+								<img class="img-fluid" src="assets/images/Service.png" alt="Hero video image" style="max-height: 60vh;">
+							</div>
+							<div class="col-md-6">
+								<div class="text-start position-initial mt-4">
+									<p class="color-5 text-uppercase intro" style="letter-spacing: 3px;">Our Services &mdash;</p>
+									<h1 class="large-header color-3">Do people struggle to <span class="color-5">find you online?</span></h1>
+									<div class="row">
+										<div class="col">
+											<p class="color-3">People are searching for what you have to sell. The problem is that if they don’t find you they can’t buy from you… and that’s costing you money (and a heap of frustration). We get it, and we don’t believe that good businesses should struggle because they find it difficult to be found online. Nothing upsets us more. We’ll help you drive sales by helping the customers who want you, to find you.</p>
+											<p><a class="btn btn-lg btn-blue" href="#">View All Case Studies</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<div class="text-start position-initial">
+									<h1 class="large-header color-3">Meet the <span class="color-5">Peaky Team</span></h1>
+									<div class="row mb-3">
+										<div class="col-auto">
+											<p class="color-3">Experts in SEO, PPC, content marketing, social and a host of other digital disciplines! Find out more about the friendly and approachable members of team Peaky.</p>
+											<div class="col-12 d-md-none">
+												<p><a class="btn btn-lg btn-blue" href="#">Meet The Team</a></p>
+											</div>
+										</div>
+										<div class="col">
+											<!-- Carousel Controls -->
+											<div class="d-none d-md-block services-controls carousel-controls">
+												<button class="carousel-control-icon carousel-control-icon-prev button--previous" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+													<i class="fas fa-arrow-left"></i>
+												</button>
+												<button class="carousel-control-icon carousel-control-icon-next button--next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+													<i class="fas fa-arrow-right"></i>
+												</button>
+											</div>
+											<!-- End Carousel Controls -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-12">
+								<div class="team-carousel">
+									<div class="team-carousel-item">
+										<img class="carousel-image clip-odd" src="assets/images/Team1.jpg" alt="Team Member Image" />
+										<div class="my-caption-container d-flex align-items-end">
+											<div class="my-caption text-center">
+												<h3 class="color-5 mb-1">Natalie</h3>
+												<span class="w-100 color-3">Managing Director</span>
+											</div>
+										</div>
+									</div>
+									<div class="team-carousel-item initial-select">
+										<img class="carousel-image clip-even" src="assets/images/Team2.jpg" alt="Team Member Image" />
+										<div class="my-caption-container d-flex align-items-end">
+											<div class="my-caption text-center">
+												<h3 class="color-5 mb-1">India</h3>
+												<span class="w-100 color-3">Digital Marketing Manager </span>
+											</div>
+										</div>
+									</div>
+									<div class="team-carousel-item">
+										<img class="carousel-image clip-odd" src="assets/images/Team3.jpg" alt="Team Member Image" />
+										<div class="my-caption-container d-flex align-items-end">
+											<div class="my-caption text-center">
+												<h3 class="color-5 mb-1">Francesca</h3>
+												<span class="w-100 color-3">Technical SEO & Social Media</span>
+											</div>
+										</div>
+									</div>
+									<div class="team-carousel-item">
+										<img class="carousel-image clip-even" src="assets/images/Team4.jpg" alt="Team Member Image" />
+										<div class="my-caption-container d-flex align-items-end">
+											<div class="my-caption text-center">
+												<h3 class="color-5 mb-1">Ben</h3>
+												<span class="w-100 color-3">Digital Marketing Executive</span>
+											</div>
+										</div>
+									</div>
+									<div class="team-carousel-item">
+										<img class="carousel-image clip-odd" src="assets/images/Team5.jpg" alt="Team Member Image" />
+										<div class="my-caption-container d-flex align-items-end">
+											<div class="my-caption text-center">
+												<h3 class="color-5 mb-1">Chloe</h3>
+												<span class="w-100 color-3">Digital Marketing Assistant</span>
+											</div>
+										</div>
+									</div>
+									<div class="team-carousel-item">
+										<img class="carousel-image clip-even" src="https://fakeimg.pl/620x800" alt="Team Member Image" style="opacity: 0.1;" />
+										<div class="my-caption-container d-flex align-items-end">
+											<div class="my-caption text-center">
+												<h3 class="color-5 mb-1">Example</h3>
+												<span class="w-100 color-3">Example Job Description</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="d-md-none d-flex services-controls carousel-controls justify-content-center" style="float: unset;">
+									<button class="carousel-control-icon carousel-control-icon-prev button--previous" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+										<i class="fas fa-arrow-left"></i>
+									</button>
+									<button class="carousel-control-icon carousel-control-icon-next button--next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+										<i class="fas fa-arrow-right"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="row mt-4">
+							<div class="col-12 text-center d-none d-md-block">
+								<p><a class="btn btn-lg btn-blue" href="#">Meet The Team</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Our Services -->
+
+			<!-- Angle 4 -->
+			<div class="w-100 angle bg-color-1">
+				<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1440 88" style="transform: scale(1,1);">
+					<path id="Path_498" data-name="Path 498" d="M240,177.375,1680,89v88.375H240Z" transform="translate(-240 -89)" fill="#FFE5F5"></path>
+				</svg>
+			</div>
+			<!-- End Angle 4 -->
+
+
+			<!-- What we do -->
+			<section id="What-We-Do">
+				<div class="container-fluid bg-color-6">
+					<div class="container pt-5">
+						<div class="row">
+							<div class="col-12">
+								<div class="position-initial text-center">
+									<p class="color-2 text-uppercase intro" style="letter-spacing: 3px;">&mdash; What We Do &mdash;</p>
+									<h1 class="large-header">
+										<span class="color-1">Choose your path to<br></span>
+										<span class="color-2">digital marketing success</span>
+									</h1>
+									<div class="row mb-3 d-flex justify-content-center">
+										<div class="col-12 col-md-10 col-lg-8 align-self-center">
+											<p class="color-7">People are searching for what you have to sell. The problem is that if they don’t find you they can’t buy from you… and that’s costing you money (and a heap of frustration).</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="myCarousel-2" class="carousel slide" data-bs-ride="carousel">
+						<!-- Carousel Content -->
+						<div class="carousel-inner">
+							<!-- Slide 1 -->
+							<div class="carousel-item active">						
+								<div class="container my-4">
+									<div class="row">
+										<div class="col-12 col-lg-4 d-flex justify-content-start align-items-center mb-4 mb-lg-0">
+											<div class="card">
+												<img class="img-fluid" src="assets/images/What we do 1.jpg" alt="What We Do Card">
+												<div class="card-body text-center">
+													<h5 class="large-header card-title mb-3">Monthly Coaching</h5>
+													<p class="card-text ">Want to do it yourself, but not sure where to start? Our monthly one-to-one coaching will help you build the skills and confidence to grow online.</p>
+													<a href="#" class="">Explore More<i class="fas fa-arrow-right ms-2"></i></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-lg-4 d-flex justify-content-start align-items-center mb-4 mb-lg-0">
+											<div class="card">
+												<img class="img-fluid" src="assets/images/What we do 2.jpg" alt="What We Do Card">
+												<div class="card-body text-center">
+													<h5 class="large-header card-title mb-3">Done for you</h5>
+													<p class="card-text ">Let us work as your in-house digital marketing team to increase your online visibility faster than every before. More visibility. More sales.</p>
+													<a href="#" class="">Explore More<i class="fas fa-arrow-right ms-2"></i></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-lg-4 d-flex justify-content-start align-items-center mb-4 mb-lg-0">
+											<div class="card">
+												<img class="img-fluid" src="assets/images/What we do 3.jpg" alt="What We Do Card">
+												<div class="card-body text-center">
+													<h5 class="large-header card-title mb-3">Workshops</h5>
+													<p class="card-text">Develop digital marketing skills to help your company grow fast.</p>
+													<a href="#" class="">Explore More<i class="fas fa-arrow-right ms-2"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End Slide 1 -->
+							<!-- Slide 2 -->
+							<div class="carousel-item">						
+								<div class="container my-4">
+									<div class="row">
+										<div class="col-12 col-lg-4 d-flex justify-content-start align-items-center mb-4 mb-lg-0">
+											<div class="card">
+												<img class="img-fluid" src="assets/images/What we do 1.jpg" alt="What We Do Card">
+												<div class="card-body text-center">
+													<h5 class="large-header card-title mb-3">Monthly Coaching</h5>
+													<p class="card-text ">Want to do it yourself, but not sure where to start? Our monthly one-to-one coaching will help you build the skills and confidence to grow online.</p>
+													<a href="#" class="">Explore More<i class="fas fa-arrow-right ms-2"></i></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-lg-4 d-flex justify-content-start align-items-center mb-4 mb-lg-0">
+											<div class="card">
+												<img class="img-fluid" src="assets/images/What we do 2.jpg" alt="What We Do Card">
+												<div class="card-body text-center">
+													<h5 class="large-header card-title mb-3">Done for you</h5>
+													<p class="card-text ">Let us work as your in-house digital marketing team to increase your online visibility faster than every before. More visibility. More sales.</p>
+													<a href="#" class="">Explore More<i class="fas fa-arrow-right ms-2"></i></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-lg-4 d-flex justify-content-start align-items-center mb-4 mb-lg-0">
+											<div class="card">
+												<img class="img-fluid" src="assets/images/What we do 3.jpg" alt="What We Do Card">
+												<div class="card-body text-center">
+													<h5 class="large-header card-title mb-3">Workshops</h5>
+													<p class="card-text">Develop digital marketing skills to help your company grow fast.</p>
+													<a href="#" class="">Explore More<i class="fas fa-arrow-right ms-2"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End Slide 2 -->
+						</div>
+						<!-- End Carousel Content -->
+						<div class="container pb-5">
+							<div class="row">
+								<div class="col-12 d-flex justify-content-center">
+									<!-- Carousel Controls -->
+									<div class="carousel-controls-2">
+										<button class="carousel-control-icon carousel-control-icon-prev" type="button" data-bs-target="#myCarousel-2" data-bs-slide="prev">
+											<i class="fas fa-arrow-left"></i>
+										</button>
+										<button class="carousel-control-icon carousel-control-icon-next" type="button" data-bs-target="#myCarousel-2" data-bs-slide="next">
+											<i class="fas fa-arrow-right"></i>
+										</button>
+									</div>
+									<!-- End Carousel Controls -->
+								</div>
+							</div>
+						</div>		
+					</div>
+				</div>
+			</section>
+			<!-- End What we do -->
+
+			<!-- Brands -->
+			<section id="Brands-Helped">
+				<div class="container brands-main-container ">
+					<div class="row">
+						<div class="col-12 text-center">
+							<h1 class="mb-2 fw-bold">We've helped brands <span class="color-5">(big and small) to grow...</span></h1>
+						</div>
+					</div>
+					<div class="row justify-content-md-center brands-container p-5 p-md-0">
+						<div class="brand brand-border col-6 col-lg-3 d-flex justify-content-center align-items-center">
+							<img class="img-fluid" src="assets/images/logos/logo-11.svg" alt="Hero video image">
+						</div>
+						<div class="brand brand-border col-6 col-lg-3 d-flex justify-content-center align-items-center">
+							<img class="img-fluid" src="assets/images/logos/logo-11.svg" alt="Hero video image">
+						</div>
+						<div class="brand brand-border col-6 col-lg-3 d-flex justify-content-center align-items-center">
+							<img class="img-fluid" src="assets/images/logos/logo-11.svg" alt="Hero video image">
+						</div>
+						<div class="brand brand-border col-6 col-lg-3 d-flex justify-content-center align-items-center">
+							<img class="img-fluid" src="assets/images/logos/logo-11.svg" alt="Hero video image">
+						</div>
+						<div class="brand brand-border col-6 col-lg-3 d-flex justify-content-center align-items-center">
+							<img class="img-fluid" src="assets/images/logos/logo-11.svg" alt="Hero video image">
+						</div>
+						<div class="brand brand-border col-6 col-lg-3 d-flex justify-content-center align-items-center">
+							<img class="img-fluid" src="assets/images/logos/logo-11.svg" alt="Hero video image">
+						</div>
+						<div class="brand brand-border col-6 col-lg-3 d-flex justify-content-center align-items-center">
+							<img class="img-fluid" src="assets/images/logos/logo-11.svg" alt="Hero video image">
+						</div>
+						<div class="brand brand-border col-6 col-lg-3 d-flex justify-content-center align-items-center">
+							<img class="img-fluid" src="assets/images/logos/logo-11.svg" alt="Hero video image">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 text-center">
+							<a class="btn btn-lg btn-blue" href="#">Become A Client</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Brands -->
+			
+			<!-- Angle 5 -->
+			<div class="w-100 angle">
+				<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1440 88" style="transform: scale(-1,1);">
+					<path id="Path_498" data-name="Path 498" d="M240,177.375,1680,89v88.375H240Z" transform="translate(-240 -89)" fill="#FF4186"/>
+				</svg>
+			</div>
+			<!-- End Angle 5 -->
+
+			<!-- About Us -->
+			<section id="Contact">
+				<div class="container-fluid bg-color-2">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 mt-5 mb-3">
+								<div class="text-start position-initial">
+									<h1 class="large-header color-3">Want to know why your website isn’t getting the traffic it deserves?</h1>
+								</div>
+							</div>
+							<div class="col-12 col-lg-7 px-3">
+								<p class="color-3">We’ll analyse your website and send you FREE report including 5 actionable tips to help improve your Google rankings.</p>
+
+								<form action="#" class="row">
+									<div class="col-12 col-md-6 mb-3">
+										<label for="exampleFormControlInput1" class="form-label">First Name*</label>
+										<input type="text" class="form-control" placeholder="" required>
+									</div>
+									<div class="col-12 col-md-6 mb-3">
+										<label for="exampleFormControlInput1" class="form-label">Last Name*</label>
+										<input type="text" class="form-control" placeholder="" required>
+									</div>
+									<div class="col-12 mb-3">
+										<label for="exampleFormControlInput1" class="form-label">Email address*</label>
+										<input type="email" class="form-control" placeholder="" required>
+									</div>
+									<div class="col-12 mb-3">
+										<label for="exampleFormControlInput1" class="form-label">Email address*</label>
+										<input type="text" class="form-control" placeholder="" required>
+									</div>
+
+									<div class="col-12">
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" id="confirm-checkbox">
+											<label class="form-check-label" for="confirm-checkbox">I Agree To Submit Email Address And Additional Contact Info For Further Storage And Processing</label>
+										</div>
+									</div>
+
+									<div class="col-12 py-4">
+										<button type="submit" class="btn btn-submit btn-lg">Submit</button>
+									</div>
+
+								</form>
+							</div>
+							<div class="col-12 col-lg-4 offset-lg-1 py-3 py-md-0 px-3">
+								<div class="row">
+									<div class="col-6 col-md-12">
+										<p class="color-3 w-100">Phone</p>
+										<p class="color-3 w-100 mb-3">01326 573748</p>
+									</div>
+									<div class="col-6 col-md-12">
+										<p class="color-3 w-100">Email</p>
+										<p class="color-3 w-100 mb-3">hello@peakydigital.co.uk</p>
+									</div>
+									<div class="col-12">
+										<p class="color-3 w-100">Address</p>
+										<p class="color-3 w-100 mb-3" style="opacity: 0.6">Unit A2 Church View Business Park,<br> Penryn, Falmouth, TR11 4FZ</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End About Us -->
 		</main>
 		<!-- End main content-->
 
 		<!-- Begin main footer area -->
 		<footer class="container-fluid bg-color-1">
 			<div class="container">
-				<p class="float-end"><a href="#">Back to top</a></p>
-				<p>&copy; 2021 Hbkr</p>
+				<div class="row">
+					<div class="col-12 col-md-4 logo-container pt-5">
+						<!--<div class="footer-logo"></div>-->
+						<img class="img-fluid" src="assets/images/logos/Peaky Logo.svg" alt="">
+					</div>
+					<div class="col-12 col-md-8 py-5">
+						<div class="row">
+							<div class="col-12 col-lg-6">
+								<p class="footer-header">Follow Us</p>
+								<div class="row">
+								<ul class="col-6">
+									<li><a href="#" class="link-color-3">SEO</a></li>
+									<li><a href="#" class="link-color-3">PPC</a></li>
+									<li><a href="#" class="link-color-3">Social Media</a></li>
+									<li><a href="#" class="link-color-3">Amazon</a></li>
+									<li><a href="#" class="link-color-3">Email Marketing</a></li>
+									<li><a href="#" class="link-color-3">Copywriting</a></li>
+								</ul>
+								<ul class="col-6">
+									<li><a href="#" class="link-color-3">CRO</a></li>
+									<li><a href="#" class="link-color-3">Strategy</a></li>
+									<li><a href="#" class="link-color-3">Ecommerce</a></li>
+									<li><a href="#" class="link-color-3">B2B</a></li>
+									<li><a href="#" class="link-color-3">Training</a></li>
+									<li><a href="#" class="link-color-3">Digital PR</a></li>
+								</ul>
+								</div>
+							</div>
+							<div class="col-6 col-lg-3">
+								<p class="footer-header">Explore</p>
+								<ul>
+									<li><a href="#" class="link-color-3">Case Studies</a></li>
+									<li><a href="#" class="link-color-3">About Us</a></li>
+									<li><a href="#" class="link-color-3">Meet The Team</a></li>
+									<li><a href="#" class="link-color-3">News & Insights</a></li>
+									<li><a href="#" class="link-color-3">White Papers</a></li>
+									<li><a href="#" class="link-color-3">Faq's</a></li>
+									<li><a href="#" class="link-color-3">Contact</a></li>
+								</ul>
+							</div>
+							<div class="col-6 col-lg-3">
+								<p class="footer-header">Legal</p>
+								<ul>
+									<li><a href="#" class="link-color-3">Cookie Policy</a></li>
+									<li><a href="#" class="link-color-3">Privacy Policy</a></li>
+									<li><a href="#" class="link-color-3">Terms Of User</a></li>
+									<li><a href="#" class="link-color-3">GDPR</a></li>
+									<li><a href="#" class="link-color-3">Disclaimer</a></li>
+									<li><a href="#" class="link-color-3">Corporate Social</a></li>
+									<li><a href="#" class="link-color-3">Responsibility</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 follow-col" style="height: 100px;">
+						<p class="footer-header">Follow Us</p>
+						<div class="social w-100">
+							<a href="#" class="bubble" title="Facebook">
+								<img class="black-to-white-filter" src="assets/images/logos/facebook-app-symbol.svg" alt="">
+							</a>
+							<a href="#" class="bubble" title="Instagram">
+								<img class="black-to-white-filter" src="assets/images/logos/iconmonstr-instagram-11.svg" alt="">
+							</a>
+							<a href="#" class="bubble" title="YouTube">
+								<img class="black-to-white-filter" src="assets/images/logos/iconmonstr-youtube-6.svg" alt="">
+							</a>
+							<a href="#" class="bubble" title="Twitter">
+								<img class="black-to-white-filter" src="assets/images/logos/iconmonstr-twitter-1.svg" alt="">
+							</a>
+							<a href="#" class="bubble" title="LinkedIn">
+								<img class="black-to-white-filter" src="assets/images/logos/iconmonstr-linkedin-1.svg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<p class="float-end small-font">&copy; 2021 All Rights Reserved</p>
+						<p class="small-font">Website By Henry Booker<br> Design by Alt Design</p>
+					</div>
+				</div>
+
+				
 			</div>
 		</footer>
 		<!-- End main footer area -->
+
+		<!-- JS Imports -->
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 		<script src="assets/dist/bootstrap/js/bootstrap.bundle.min.js"></script>
-		<script src="assets/js/styles.js"></script>		
+		<script src="assets/js/styles.js"></script>
+		<!-- End JS Imports-->
 	</body>
 </html>

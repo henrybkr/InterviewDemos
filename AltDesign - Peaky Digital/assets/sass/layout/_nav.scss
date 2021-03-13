@@ -29,8 +29,10 @@
     border: unset;
     border-radius: unset;
     padding: 2rem;
-    width: 500px;
-    left: -190px;
+    //width: 500px;
+    //left: -190px;
+    left: -2.5rem;
+    width: max-content;
 }
 
 .dropdown-bubble .dropdown-menu:before,
@@ -69,6 +71,7 @@
 
 .dropdown-bubble .dropdown-menu ul {
     padding-left: 0;
+    width: 150px;
 }
 
 .nav-heading {

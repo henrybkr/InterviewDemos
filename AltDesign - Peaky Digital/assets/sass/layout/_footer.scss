@@ -1,10 +1,60 @@
 @import '../variables/colors';
 
+$footer_logo_height: "100px";
+
 footer {
     color: $color3;
-    height: 100px;
-}
+    background: $color1;
 
-footer p {
-    color: white;
+    .footer-header {
+        width: 100%;
+        color: $color2;
+    }
+
+    .link-color
+
+    .logo-container {
+        height: 100px;
+        padding: 0 10px;
+    }
+
+    @media (min-width: 768px) {
+        .follow-col {
+            margin-top: -150px;
+        }
+    }
+    
+
+    ul { padding-left: 0; }
+    
+    ul li {
+        list-style-type: none;
+        margin: 0;
+    }
+
+    ul li a {
+        text-decoration: none;
+        transition: color 0.2s ease-in-out;
+    }
+
+    .social .bubble {
+        display: block;
+        height: 40px;
+        width: 40px;
+        border: 1px solid $color3;
+        border-radius: 50px;
+        background: transparent;
+        padding: 7px;
+        float: left;
+        margin-right: 1rem;
+        transition: all 0.5s ease-in-out;
+        text-align: center;
+
+        &:hover {
+            background-color: $color2;
+            border-color: $color2;
+        }
+
+        img { width: 18px; }
+    }
 }

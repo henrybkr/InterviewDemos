@@ -1,17 +1,10 @@
 @import '../variables/colors';
 @import '../variables/other';
 
-.carousel-inner .carousel-item {
-    width: 100%;
-    background-color: $color1;
-}
-
 .carousel-controls {
-    
     height: 50px;
     padding-bottom: 50px;
 }
-
 /* Carousel Buttons */
 .carousel-indicators [data-bs-target] {
     width: 12.5px;
@@ -44,13 +37,13 @@
 .carousel-control-icon:hover, .carousel-control-icon:active, .carousel-control-icon:focus {
     opacity: 0.8;
 }
-
 .carousel-indicators {
     position: relative;
     margin-top: 20px;
     float: right;
 }
 
+/* Media Queries for standard bootstrap  */
 @media (min-width: 1200px) {
     .carousel-controls {
         position: absolute;
@@ -64,5 +57,98 @@
         position: absolute;
         float: unset;
         margin-top: unset;
+    }
+}
+
+/* Styling for the flickity carousel
+
+/*body { font-family: sans-serif; } */
+
+.carousel {
+    background: transparent;
+}
+
+.carousel-cell {
+    width: 28%;
+    height: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+    opacity: 0.8;
+    transition: opacity linear 0.2s;
+}
+
+/* cell number */
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+.services-controls.carousel-controls {
+    position: relative;
+    bottom: 0;
+    float:right;
+
+    & .carousel-control-icon {
+        background-color: $color5;
+        margin-right: 0;
+        margin-left: 10px;
+    }
+}
+
+.team-carousel-item {
+    display: block;
+    height: 550px;
+    min-width: 150px;
+    margin-right: 10px;
+    top: 50%;
+
+    .carousel-image {
+        display: block;
+        height: 550px;
+        /* set min-width, allow images to set cell width */
+        min-width: 150px;
+        /* vertically center */
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0 10px;
+        
+        &.clip-even {
+            clip-path: polygon(0 0, 100% 6%, 100% 100%, 0% 100%);
+        }
+        &.clip-odd {
+            clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+        }
+    }
+}
+
+.my-caption-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    transform: translateY(-50%);
+}
+
+.my-caption {
+    background: $color1;
+    padding: 10px;
+    width: calc(100% + 10px);
+    margin: -5px;
+}
+
+/* Lower 'What we do' carousel */
+#What-We-Do .card {
+    .img-fluid { clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 94%); }
+    .card-body a { 
+        color: $color2;
+        text-align: center;
+        width: 100%;
+        display: block;
     }
 }

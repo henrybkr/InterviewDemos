@@ -8,35 +8,43 @@
 </p>
 
 ## About
-* Code test from Alt Design. Details to be added
+* Code test from Alt Design. This is a real project for a real client although this is purely for testing purposes. Original design and assets were provided by Alt Design.
 
 ### Notes
+> This project provided me with the opportunity to extend my skills. I used the upcoming beta version of Bootstrap 5, started using SASS in a real project and got a chance to work more with front end animations and mobile responvity. Ultimately I'm fairly happy with the result and excited to receive some feedback.
+
 > Todo:
-> * Mobile Navigation
-> * Finish remaining sections
-> * Footer & Footer Navigation
-> * Navigation bubble improvements
-> * Improve mobile responsivity for some sections
-> * Add scrolling animations
 > * Cross browser testing
+> * Additional scrolling animations
+> * Mobile Navigation
+> * Potential video feature on first carousel? Perhaps a modal.
 
 ## Current Features
-* To be added
+* Mobile Responsivity
+* A handful of carousels in different styles
+* Majority of the 'slant' effects between sections and components are pure CSS/modifying svg values.
+* General button/card animations on key features
+* Initial launch animations that only display one time at load
+* Scrolling animations (JS Observer)
 
 ## Feedback Received
 * To be added
 
 ## Issues
-* To be added
+* Very minor overflow issue for mobile users due to an absolute element. Have reduced the issue but still occuring (Scrollbar on low resolutios relating to the 'Creating Great Work' section)
+* Desktop navigation works but needs improving. Using static values to shift left at the moment.
+* Due to time constraints I haven't had a chance to complete the mobile nav.
 
 ## Technologies Utilised
 * [Bootstrap v5.0.0-beta2](https://getbootstrap.com/)
 * [SASS](https://github.com/sass/sass)
 * [FontAwesome](https://fontawesome.com/)
 * [Animate.css](https://github.com/animate-css/animate.css)
-* ~~JavaScript~~ No custom JS in used besides that offered by bootstrap
+* [Flickity](https://github.com/metafizzy/flickity)
+* ~~JavaScript~~
 * HTML5
 
 ## Tested via
 * Chrome
-* To be added
+* Firefox
+* Edge
